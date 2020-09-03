@@ -47,7 +47,7 @@ const userRoutes = (app, fs) => {
             data[newUserId.toString()] = req.body;
 
             writeFile(JSON.stringify(data, null, 2), () => {
-                res.status(200).send('new user added');
+                res.status(200).send('Someone has gone in');
             });
         },
             true);
